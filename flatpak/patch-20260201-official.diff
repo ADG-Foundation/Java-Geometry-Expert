@@ -1,0 +1,69 @@
+diff --git a/src/main/java/wprover/AboutDialog.java b/src/main/java/wprover/AboutDialog.java
+index 34efa75..bc61c3e 100644
+--- a/src/main/java/wprover/AboutDialog.java
++++ b/src/main/java/wprover/AboutDialog.java
+@@ -107,7 +107,7 @@ public class AboutDialog extends JPopupMenu implements MouseListener {
+ 
+         JLabel b1 = new JLabel(GExpert.getLanguage("For more information, please visit:"));
+         b1.addMouseListener(this);
+-        b2 = new JLabel("https://github.com/kovzol/Java-Geometry-Expert"); // TODO: Put this in a top-level file.
++        b2 = new JLabel("https://github.com/ADG-Foundation/Java-Geometry-Expert"); // TODO: Put this in a top-level file.
+         b2.setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 1));
+         b2.addMouseListener(this);
+         panel3.add(b1);
+@@ -165,7 +165,7 @@ public class AboutDialog extends JPopupMenu implements MouseListener {
+      */
+     public void mousePressed(MouseEvent e) {
+         if (e.getSource() == b2)
+-            GExpert.openURL("https://github.com/kovzol/Java-Geometry-Expert"); // FIXME: it opens twice
++            GExpert.openURL("https://github.com/ADG-Foundation/Java-Geometry-Expert"); // FIXME: it opens twice
+         this.setVisible(false);
+     }
+ 
+diff --git a/src/main/java/wprover/GExpert.java b/src/main/java/wprover/GExpert.java
+index 64aa2b3..4ea569d 100644
+--- a/src/main/java/wprover/GExpert.java
++++ b/src/main/java/wprover/GExpert.java
+@@ -1874,9 +1874,9 @@ public class GExpert extends JFrame implements ActionListener, KeyListener, Drop
+             setBKState();
+             d.repaint();
+         } else if (command.equals("Online Help")) {
+-            openURL(("https://github.com/kovzol/Java-Geometry-Expert")); // FIXME, use help/index.html
++            openURL(("https://github.com/ADG-Foundation/Java-Geometry-Expert")); // FIXME, use help/index.html
+         } else if (command.equals("JGEX Homepage")) {
+-            openURL(("https://github.com/kovzol/Java-Geometry-Expert"));
++            openURL(("https://github.com/ADG-Foundation/Java-Geometry-Expert"));
+         } else if (command.equals("Contact Us")) {
+             openURL(("mailto:jgex@googlegroups.com"));
+         } else if (command.equals("ff")) {
+@@ -1884,7 +1884,7 @@ public class GExpert extends JFrame implements ActionListener, KeyListener, Drop
+             setBKState();
+             d.repaint();
+         } else if (command.equalsIgnoreCase("Check for Update")) {
+-            openURL("https://github.com/kovzol/Java-Geometry-Expert/releases");
++            openURL("https://github.com/ADG-Foundation/Java-Geometry-Expert/releases");
+         } else if (command.equals("fr")) {
+             dp.Undo();
+             setBKState();
+diff --git a/src/main/java/wprover/PanelProve.java b/src/main/java/wprover/PanelProve.java
+index 5244d39..7c300d4 100644
+--- a/src/main/java/wprover/PanelProve.java
++++ b/src/main/java/wprover/PanelProve.java
+@@ -1669,7 +1669,7 @@ public class PanelProve extends JTabbedPane implements ChangeListener {
+             if (rule < 10) {
+                 ruleStr = "0" + ruleStr; // leading zero
+             }
+-            String url = "https://github.com/kovzol/Java-Geometry-Expert/blob/master/src/main/resources/docs/web/Rule"
++            String url = "https://github.com/ADG-Foundation/Java-Geometry-Expert/blob/master/src/main/resources/docs/web/Rule"
+                     + ruleStr + ".jpg?raw=true";
+             ret += ", URL=\"" + url + "\"";
+         }
+@@ -1707,7 +1707,7 @@ public class PanelProve extends JTabbedPane implements ChangeListener {
+             // For some reason, this does not work, we get
+             // an error org.apache.batik.dom.util.SAXIOException: Invalid byte 1 of 1-byte UTF-8 sequence.
+             // FIXME.
+-            // String url = "https://github.com/kovzol/Java-Geometry-Expert/blob/master/src/main/resources/docs/web/Rule" + rule + ".jpg?raw=true";
++            // String url = "https://github.com/ADG-Foundation/Java-Geometry-Expert/blob/master/src/main/resources/docs/web/Rule" + rule + ".jpg?raw=true";
+             n = Node.builder().shape(s).table(table().border(0).bgColor(c).
+                     cellBorder(0).cellSpacing(0).cellPadding(6).href(url).tooltip(tooltipstring).
+                     tr(td().color(c).text(co.getNo() + ") " + co.getText())).
