@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<svg 
+     version="1.1"
+     baseProfile="full"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:ev="http://www.w3.org/2001/xml-events"
+     width="36.948199994335724cm"
+     height="16.044173330873708cm"
+     viewBox="0 0 554 240"
+     >
+<title>
+
+</title>
+<g stroke-dashoffset="0.0000" stroke-linejoin="miter" stroke-dasharray="none" stroke-width="1.0000" stroke-linecap="square" stroke-miterlimit="10.000">
+<g id="misc">
+</g><!-- misc -->
+<g id="layer0">
+<clipPath id="clipd1f776f5-2541-4222-9ad6-9aca59f48a9b">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip1)">
+<g fill="#7d7dff" fill-rule="evenodd" fill-opacity=".098039" stroke="none">
+  <path d="M 502.23 184.32 L 502.23 34.106 L 51.603 184.32 z"/>
+<title>t1 háromszög</title>
+<desc>t1 háromszög: A, B, C sokszög</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip1 -->
+<clipPath id="clip2a0b8d83-1902-4a26-92e5-fa4e96cf88ee">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip2)">
+<g fill="#00ff00" fill-rule="evenodd" fill-opacity="1.0000" stroke="none">
+  <path d="M 464.62 119.17 L 427.01 102.53 L 431.41 143.43 z"/>
+<title>poly1 sokszög</title>
+<desc>poly1 sokszög: Sokszög(D, E, 3)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip2 -->
+<clipPath id="clip790fdb47-90e3-4758-8462-b59f91392600">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip3)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="2.5000" fill="none" stroke="#00ff00" stroke-linecap="round">
+  <path d="M 464.62 119.17 L 427.01 102.53 L 431.41 143.43 z"/>
+<title>poly1 sokszög</title>
+<desc>poly1 sokszög: Sokszög(D, E, 3)</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip3 -->
+<clipPath id="clip707a5e3e-ef54-44cd-a0ff-d5bfa1de652b">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip4)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="3.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 502.23 184.32 L 502.23 34.106"/>
+<title>c szakasz</title>
+<desc>c szakasz: [A, B] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip4 -->
+<clipPath id="clip731b059a-762d-4dca-9294-04d55f7b8465">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip5)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="3.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 502.23 34.106 L 51.603 184.32"/>
+<title>a szakasz</title>
+<desc>a szakasz: [B, C] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip5 -->
+<clipPath id="clip8736cdca-660d-4fd9-927e-7d8ac8338250">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip6)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="3.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 51.603 184.32 L 502.23 184.32"/>
+<title>b szakasz</title>
+<desc>b szakasz: [C, A] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip6 -->
+<clipPath id="clipd56b7797-642a-450b-b1c9-968941bc1531">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip7)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="2.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 464.62 119.17 L 427.01 102.53"/>
+<title>k szakasz</title>
+<desc>k szakasz: [D, E] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip7 -->
+<clipPath id="clip6e8dc63c-88b2-4668-9dd2-798b090c0108">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip8)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="2.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 427.01 102.53 L 431.41 143.43"/>
+<title>l szakasz</title>
+<desc>l szakasz: [E, F] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip8 -->
+<clipPath id="clip5a11b070-9f6c-4322-a143-86721bc897d4">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip9)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="2.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 431.41 143.43 L 464.62 119.17"/>
+<title>m szakasz</title>
+<desc>m szakasz: [F, D] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip9 -->
+<clipPath id="clipa8e5c8c5-d3e5-4f6b-89ed-973bde72198f">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip10)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="2.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 427.01 102.53 L 502.23 34.106"/>
+<title>n szakasz</title>
+<desc>n szakasz: [E, B] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip10 -->
+<clipPath id="clipceaa9da1-dc64-482c-b4b2-93c6fad590e9">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip11)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="2.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 464.62 119.17 L 502.23 34.106"/>
+<title>p szakasz</title>
+<desc>p szakasz: [D, B] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip11 -->
+<clipPath id="clip5bf67d5e-1efc-471b-9ebc-a235fb4f46a7">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip12)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="2.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 464.62 119.17 L 502.23 184.32"/>
+<title>q szakasz</title>
+<desc>q szakasz: [D, A] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip12 -->
+<clipPath id="clip2afffb6f-dc78-4362-ac15-0d1d7a6a9ac0">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip13)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="2.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 431.41 143.43 L 502.23 184.32"/>
+<title>r szakasz</title>
+<desc>r szakasz: [F, A] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip13 -->
+<clipPath id="clip0c4eed7f-0d38-4e9e-850a-52898ea3c2ae">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip14)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="2.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 431.41 143.43 L 51.603 184.32"/>
+<title>s szakasz</title>
+<desc>s szakasz: [F, C] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip14 -->
+<clipPath id="clip783209f0-ab58-4b56-a206-bcfcb89dc971">
+  <path d="M 0.0000 0.0000 L 0.0000 241.00 L 555.00 241.00 L 555.00 0.0000 z"/>
+</clipPath>
+<g clip-path="url(#clip15)">
+<g stroke-opacity=".69804" stroke-linejoin="round" stroke-width="2.5000" fill="none" stroke="#0000ff" stroke-linecap="round">
+  <path d="M 427.01 102.53 L 51.603 184.32"/>
+<title>t szakasz</title>
+<desc>t szakasz: [E, C] szakasz</desc>
+
+</g> <!-- drawing style -->
+</g> <!-- clip15 -->
+</g><!-- layer0 -->
+</g> <!-- default stroke -->
+</svg> <!-- bounding box -->

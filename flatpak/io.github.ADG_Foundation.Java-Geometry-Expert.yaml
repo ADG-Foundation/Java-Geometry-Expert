@@ -42,9 +42,18 @@ modules:
       # Use xdg-open to open a browser:
       - sed -i 's/firefox/xdg-open/' src/main/java/wprover/GExpert.java
 
+      # Build application:
       - gradle -I flatpak/init.gradle --offline --no-daemon installDist
       - cp -a build/install/jgex/* /app
       - install -D jgex /app/bin/jgex
+
+      # Copy .desktop, .metainfo and icons:
+      - install -D flatpak/io.github.ADG_Foundation.Java-Geometry-Expert.desktop /app/share/applications/io.github.ADG_Foundation.Java-Geometry-Expert.desktop
+      - install -Dm644 flatpak/io.github.ADG_Foundation.Java-Geometry-Expert.metainfo.xml /app/share/metainfo/io.github.ADG_Foundation.Java-Geometry-Expert.metainfo.xml
+      - install -Dm644 flatpak/jgex-64.png /app/share/icons/hicolor/64x64/apps/io.github.ADG_Foundation.Java-Geometry-Expert.png
+      - install -Dm644 flatpak/jgex-128.png /app/share/icons/hicolor/128x128/apps/io.github.ADG_Foundation.Java-Geometry-Expert.png
+      - install -Dm644 flatpak/jgex-256.png /app/share/icons/hicolor/256x256/apps/io.github.ADG_Foundation.Java-Geometry-Expert.png
+      - install -Dm644 flatpak/jgex-512.png /app/share/icons/hicolor/512x512/apps/io.github.ADG_Foundation.Java-Geometry-Expert.png
 
     sources:
       - type: archive
