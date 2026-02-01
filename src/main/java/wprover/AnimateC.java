@@ -210,7 +210,7 @@ public class AnimateC {
             gap = step;
             step_time = (int) (1000 / step);
         }
-        this.reClaclulate();
+        this.reCalculate();
     }
 
     /**
@@ -261,14 +261,14 @@ public class AnimateC {
         } else {
             CMisc.print("Error,undifined on type ");
         }
-        reClaclulate();
+        reCalculate();
 
     }
 
     /**
      * Recalculates the animation parameters based on the current settings.
      */
-    public void reClaclulate() {
+    public void reCalculate() {
         if (onType == 2) {
             Circle c = (Circle) onObj;
             CPoint pt = c.getSidePoint();
@@ -310,7 +310,7 @@ public class AnimateC {
      * Starts the animation by recalculating initial values and setting initial positions.
      */
     public void startAnimate() {
-        reClaclulate();
+        reCalculate();
 
         bx = pA.getx();
         by = pA.gety();

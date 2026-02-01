@@ -2215,6 +2215,29 @@ public class GExpert extends JFrame implements ActionListener, KeyListener, Drop
     }
 
     /**
+     * Show a warning on saving file in an unsafe folder that will be removed after closing JGEX.
+     * In a Flathub sandbox, this is an important message for the user because the OS
+     * does not inform the user on saving a file in a temporary folder.
+     * @param file The user wants to use as the saved file.
+     */
+    private void showWarningUnsafeFolder(File file) {
+        // Linux Flathub related code.
+        String absolutePath = file.getAbsolutePath();
+        String documentsDir = System.getenv("XDG_DOCUMENTS_DIR");
+        String downloadDir = System.getenv("XDG_DOWNLOAD_DIR");
+        String flatpakId = System.getenv("FLATPAK_ID");
+        if (flatpakId != null && documentsDir != null && downloadDir != null
+                && !absolutePath.startsWith(documentsDir) && !absolutePath.startsWith(downloadDir)) {
+            JOptionPane.showMessageDialog(null,
+                    "The application is running in Flatpak's sandbox.\n" +
+                            "It is not possible to save data permanently in an arbitrary folder.\n" +
+                            "Please save your data in your Documents or Downloads folder\n" +
+                            "in order to avoid data loss after closing the program."
+            );
+        }
+    }
+
+    /**
      * Saves the GDD proof as a GraphViz file.
      *
      * @param src the source object, which can be a File or another object
@@ -2252,6 +2275,7 @@ public class GExpert extends JFrame implements ActionListener, KeyListener, Drop
         } catch (Exception ee) {
             ee.printStackTrace();
         }
+        showWarningUnsafeFolder(ff);
     }
 
     /**
@@ -2424,6 +2448,7 @@ public class GExpert extends JFrame implements ActionListener, KeyListener, Drop
             }
             if (file != null)
                 try {
+                    showWarningUnsafeFolder(file);
                     String path = file.getPath();
                     if (!path.endsWith(".gex")) {
                         path += ".gex";
@@ -2583,6 +2608,8 @@ public class GExpert extends JFrame implements ActionListener, KeyListener, Drop
         chooser.setCurrentDirectory(new File(dr));
 
         File ff = chooser.getSelectedFile();
+        showWarningUnsafeFolder(ff);
+
         String p = ff.getPath();
         if (!p.endsWith("gif") && !p.endsWith("GIF")) {
             p = p + ".gif";
@@ -2657,6 +2684,8 @@ public class GExpert extends JFrame implements ActionListener, KeyListener, Drop
 
 
         File ff = chooser.getSelectedFile();
+        showWarningUnsafeFolder(ff);
+
         String p = ff.getPath();
         if (!p.endsWith("gif") && !p.endsWith("GIF")) {
             p = p + ".gif";
@@ -2664,7 +2693,7 @@ public class GExpert extends JFrame implements ActionListener, KeyListener, Drop
         }
 
 
-        am.reClaclulate();
+        am.reCalculate();
         int n = am.getRounds();
         if (n == 0) return;
 
@@ -2759,6 +2788,8 @@ public class GExpert extends JFrame implements ActionListener, KeyListener, Drop
         }
 
         File ff = chooser.getSelectedFile();
+        showWarningUnsafeFolder(ff);
+
         FileFilter f = chooser.getFileFilter();
         String endfix = f.getDescription();
         if (endfix == null)

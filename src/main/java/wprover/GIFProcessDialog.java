@@ -87,7 +87,7 @@ public class GIFProcessDialog extends JBaseDialog implements ActionListener {
             am.width = rect.getX() + rect.getWidth() - 5;
             am.height = rect.getY() + rect.getHeight() - 5;
 
-            am.reClaclulate();
+            am.reCalculate();
             total = am.getRounds();
 
             GIFProcessDialog.this.setVisible(true);
