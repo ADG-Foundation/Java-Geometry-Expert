@@ -43,7 +43,7 @@
   <h3>4. How to use <a name="vpp" id="vpp"></a></h3>
   
   <p>
-  <a href="https://github.com/kovzol/Java-Geometry-Expert/releases">Download JGEX</a> for your platform and just start it.
+  <a href="https://github.com/ADG_Foundation/Java-Geometry-Expert/releases">Download JGEX</a> for your platform and just start it.
   In case you want to contribute to the development,
   you need to have some experience in the Java language.
   JGEX is written in Java, so you need a JDK in order to compile the code.

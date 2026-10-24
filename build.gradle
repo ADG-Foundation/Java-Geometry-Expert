@@ -28,12 +28,12 @@ plugins {
 
 
 // Global settings:
-group = 'io.github.kovzol'
+group = 'io.github.ADG_Foundation'
 
 ext.softwareVersion = project.findProperty('softwareVersion')
         ?: System.getenv('SOFTWARE_VERSION')
         ?: '0-undefined-version'
-ext.githubRepo = 'kovzol/Java-Geometry-Expert'
+ext.githubRepo = 'ADG_Foundation/Java-Geometry-Expert'
 ext.buildDate = LocalDate.now().toString() // e.g., "2026-10-09"
 
 processResources {
@@ -237,7 +237,7 @@ javapackager {
     description = "JGEX combines dynamic geometry software, automated geometry theorem prover with a visually dynamic approach for presenting proofs."
     mainClass = applicationMainClass
     organizationName = "JGEX Contributors"
-    url = "https://github.com/kovzol/Java-Geometry-Expert"
+    url = "https://github.com/ADG_Foundation/Java-Geometry-Expert"
     organizationEmail = "jgex@googlegroups.com"
     version = softwareVersion
     fileAssociations = [
