@@ -11,8 +11,8 @@ import java.io.FileOutputStream;
  * It extends the CClass class and provides methods for drawing and saving the equality mark.
  */
 public class Cedmark extends CClass {
-    private static int DEFAULT_LEN = 8;
-    private static int DEFAULT_GAP = 6;
+    private static final int DEFAULT_LEN = 8;
+    private static final int DEFAULT_GAP = 6;
 
     CPoint p1, p2;
     private int length = DEFAULT_LEN;
@@ -146,7 +146,7 @@ public class Cedmark extends CClass {
 
         double xx2 = x + dy * length;
         double yy2 = y - dx * length;
-        g2.drawLine((int) xx1, (int) yy1, (int) xx2, (int) yy2);
+        ShapeDrawer.drawLine(g2, xx1, yy1, xx2, yy2);
     }
 
     /**
@@ -209,7 +209,7 @@ public class Cedmark extends CClass {
 
         if (!this.isdraw()) {
             g2.setColor(Color.white);
-            g2.drawLine((int) x1, (int) y1, (int) x2, (int) y2);
+            ShapeDrawer.drawLine(g2, x1, y1, x2 ,y2);
         }
     }
 

@@ -2,6 +2,7 @@ package wprover;
 
 
 import UI.DropShadowBorder;
+import wprover.CheerpJIntegration.CheerpJIntegration;
 
 import javax.swing.*;
 import javax.swing.text.BadLocationException;
@@ -30,7 +31,7 @@ public class AboutDialog extends JPopupMenu implements MouseListener {
     public AboutDialog(GExpert f) {
         gx = f;
 
-        if (!GExpert.isRunningInCheerpJ()) {
+        if (!CheerpJIntegration.isRunningInCheerpJ()) {
             // FIXME: This does not work properly in CheerpJ.
             this.setBorder(BorderFactory.createCompoundBorder(new DropShadowBorder(), BorderFactory.createLineBorder(color, 4)));
         }
@@ -51,11 +52,11 @@ public class AboutDialog extends JPopupMenu implements MouseListener {
         panel2.addMouseListener(this);
         panel2.setLayout(new BoxLayout(panel2, BoxLayout.Y_AXIS));
 
-        JLabel lv = new JLabel(GExpert.getLanguage("Java Geometry Expert") + " " + Version.getVersion1());
+        JLabel lv = new JLabel(GExpert.getLanguage("Java Geometry Expert") + " " + BuildInfo.getVersion());
         lv.setHorizontalTextPosition(JLabel.LEFT);
         panel2.add(lv);
 
-        lv = new JLabel(GExpert.getLanguage("Last modified on") + " " + Version.getData());
+        lv = new JLabel(GExpert.getLanguage("Build date") + " " + BuildInfo.getBuildDate());
         lv.setHorizontalTextPosition(JLabel.RIGHT);
         panel2.add(lv);
 
@@ -107,7 +108,7 @@ public class AboutDialog extends JPopupMenu implements MouseListener {
 
         JLabel b1 = new JLabel(GExpert.getLanguage("For more information, please visit:"));
         b1.addMouseListener(this);
-        b2 = new JLabel("https://github.com/kovzol/Java-Geometry-Expert"); // TODO: Put this in a top-level file.
+        b2 = new JLabel(BuildInfo.getRepoUrl());
         b2.setBorder(BorderFactory.createEmptyBorder(1, 1, 1, 1));
         b2.addMouseListener(this);
         panel3.add(b1);
@@ -164,8 +165,9 @@ public class AboutDialog extends JPopupMenu implements MouseListener {
      * @param e the event to be processed
      */
     public void mousePressed(MouseEvent e) {
+        System.out.println("public void mousePressed(MouseEvent e)");
         if (e.getSource() == b2)
-            GExpert.openURL("https://github.com/kovzol/Java-Geometry-Expert"); // FIXME: it opens twice
+            GExpert.openURL(BuildInfo.getRepoUrl()); // FIXME: it opens twice
         this.setVisible(false);
     }
 

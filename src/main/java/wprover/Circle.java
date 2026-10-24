@@ -1,6 +1,7 @@
 package wprover;
 
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.DataInputStream;
@@ -18,8 +19,8 @@ public class Circle extends CClass {
     int type = PCircle;
 
     CPoint o = new CPoint();
-    Vector points = new Vector();
-    Vector cons = new Vector();
+    List<Object> points = new ArrayList<>();
+    List<Object> cons = new ArrayList<>();
 
     /**
      * Gets the number of points on the circle.
@@ -72,7 +73,7 @@ public class Circle extends CClass {
         y1 = o.y1.value;
         r = getRadius();
         if (r < CMisc.MAX_DRAW_LEN)
-            g2.drawOval((int) (x1 - r), (int) (y1 - r), 2 * (int) r, 2 * (int) r);
+            ShapeDrawer.drawEllipse(g2, x1 - r, y1 - r,2 *  r, 2 *  r);
         else {
             if (points.size() < 2) return;
             CPoint p1, p2;
@@ -100,7 +101,7 @@ public class Circle extends CClass {
             y1 = p1.gety() - dy * 2000 / sl;
             double x2 = p1.getx() + dx * 2000 / sl;
             double y2 = p1.gety() + dy * 2000 / sl;
-            g2.drawLine((int) x1, (int) y1, (int) x2, (int) y2);
+            ShapeDrawer.drawLine(g2, x1, y1, x2, y2);
         }
     }
 
@@ -449,8 +450,8 @@ public class Circle extends CClass {
      * @param c2 the second circle
      * @return a vector of common points
      */
-    public static Vector CommonPoints(Circle c1, Circle c2) {
-        Vector vlist = new Vector();
+    public static List<Object> CommonPoints(Circle c1, Circle c2) {
+        List<Object> vlist = new ArrayList<>();
         for (int i = 0; i < c1.points.size(); i++) {
             Object obj = c1.points.get(i);
             if (c2.points.contains(obj)) {
@@ -590,6 +591,4 @@ public class Circle extends CClass {
             }
         }
     }
-
-
 }
