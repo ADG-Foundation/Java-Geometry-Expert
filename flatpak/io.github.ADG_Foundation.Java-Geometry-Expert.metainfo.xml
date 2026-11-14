@@ -68,6 +68,15 @@
   <content_rating type="oars-1.1" />
 
   <releases>
+    <release version="0.88" date="2026-11-14">
+    <url type="details">https://github.com/ADG-Foundation/Java-Geometry-Expert/commits/946fca79dfcb5ac2b1f1cfe97d622de5f00de897</url>
+      <description>
+        <p>Release description</p>
+          <ul>
+            <li>Fix point positioning via real coordinates (instead of integers)</li>
+          </ul>
+      </description>
+    </release>
     <release version="0.87" date="2026-02-01">
     <url type="details">https://github.com/ADG-Foundation/Java-Geometry-Expert/commits/5774551c2957d8b9405f41c97405f60d3ad7dd30</url>
       <description>
