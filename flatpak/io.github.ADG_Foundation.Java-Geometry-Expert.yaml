@@ -52,8 +52,11 @@ modules:
     build-commands:
       # Use flatdir for dependencies:
       - sed -i '/repositories[[:space:]]*{/a flatDir { dirs "/run/build/jgex-sources/dependencies" }' build.gradle
-      # Change links to ADG Foundation's official links:
-      - git apply flatpak/patch-20260201-official.diff
+      # Remove javapackager:
+      - sed -i '/import io.github.javapackager.model.FileAssociation/d' build.gradle
+      - sed -i "/id 'io.github.javapackager' version '2.0.0'/d" build.gradle
+      - sed -i '/^javapackager {/,/^}/d' build.gradle
+      - sed -i '/^tasks.matching {/,/^}/d' build.gradle
 
       # Build application:
       - gradle -I flatpak/init.gradle --offline --no-daemon installDist
