@@ -68,6 +68,15 @@
   <content_rating type="oars-1.1" />
 
   <releases>
+    <release version="0.89" date="2026-11-19">
+    <url type="details">https://github.com/ADG-Foundation/Java-Geometry-Expert/commits/6fd19a052b1ddacf69462be5bf0f7c1de4c466a1</url>
+      <description>
+        <p>Release description</p>
+          <ul>
+            <li>Fix order of construction steps</li>
+          </ul>
+      </description>
+    </release>
     <release version="0.88" date="2026-11-14">
     <url type="details">https://github.com/ADG-Foundation/Java-Geometry-Expert/commits/946fca79dfcb5ac2b1f1cfe97d622de5f00de897</url>
       <description>
